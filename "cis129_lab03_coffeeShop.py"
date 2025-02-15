@@ -1,0 +1,38 @@
+#Declare variables and constants for this program
+    #Declare name of the item
+nameOfFirstItem="coffee"
+nameOfSecondItem="muffin"
+
+#Declare the number of items purchased
+numberOfFirstItemsPurchased=2
+numberOfSecondItemsPurchased=1
+
+    #Declare the price of the item
+priceOfFirstItem= 5
+priceOfSecondItem= 8
+taxPercent=.06
+
+#Input: Get input from the customer
+print ("What are you purchasing?")
+
+    #get the name of item as well as quantity
+print ("2 coffees")
+print ("1 muffin")
+
+#get the price of item
+print ("2 coffees = ", priceOfFirstItem * 2)
+print ("1 muffin =", priceOfSecondItem)
+
+#Processing: Calculate the total cost
+totalCost = (numberOfFirstItemsPurchased * priceOfFirstItem) + (numberOfSecondItemsPurchased * priceOfSecondItem) * taxPercent
+
+print (totalCost)
+
+print ("***************************************")
+print ("My Coffee and Muffin Shop Receipt")
+print ("2 Coffees at $5 each: $ 10.00")
+print ("1 Muffin at $4 each: $ 4.00")
+print ("6% tax: $ .48")
+print ("---------")
+print ("Total: $ 10.48")
+print ("***************************************")
