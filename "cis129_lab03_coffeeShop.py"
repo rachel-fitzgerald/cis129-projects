@@ -2,6 +2,8 @@
     #Declare name of the item
 nameOfFirstItem="coffee"
 nameOfSecondItem="muffin"
+nameofThirdItem="Tea"
+nameofFourthItem="Doughnut"
 
 #Declare the number of items purchased
 numberOfFirstItemsPurchased=2
@@ -9,7 +11,9 @@ numberOfSecondItemsPurchased=1
 
     #Declare the price of the item
 priceOfFirstItem= 5
-priceOfSecondItem= 8
+priceOfSecondItem= 4
+priceofThirdItem= 4
+priceOfFourthItem= 2
 taxPercent=.06
 
 #Input: Get input from the customer
@@ -18,13 +22,17 @@ print ("What are you purchasing?")
     #get the name of item as well as quantity
 print ("2 coffees")
 print ("1 muffin")
+print ("1 tea")
+print ("2 doughnuts")
 
 #get the price of item
 print ("2 coffees = ", priceOfFirstItem * 2)
 print ("1 muffin =", priceOfSecondItem)
+print ("1 tea =", priceOfThirdItem)
+print ("2 doughnuts =", priceOfFourthItem)
 
 #Processing: Calculate the total cost
-totalCost = (numberOfFirstItemsPurchased * priceOfFirstItem) + (numberOfSecondItemsPurchased * priceOfSecondItem) * taxPercent
+totalCost = (numberOfFirstItemsPurchased * priceOfFirstItem) + (numberOfSecondItemsPurchased * priceOfSecondItem) + (numberOfThirdItem * priceOfThirdItem) + (numberOfFourthItemsPurchased * priceOfFourthitem) * taxPercent
 
 print (totalCost)
 
@@ -32,7 +40,9 @@ print ("***************************************")
 print ("My Coffee and Muffin Shop Receipt")
 print ("2 Coffees at $5 each: $ 10.00")
 print ("1 Muffin at $4 each: $ 4.00")
-print ("6% tax: $ .48")
+print ("1 Tea at $4 each: $ 4.00")
+print ("2 Doughnuts at $2 each: $ 2.00")
+print ("6% tax: $ 1.32")
 print ("---------")
-print ("Total: $ 10.48")
+print ("Total: $ 23.32")
 print ("***************************************")
