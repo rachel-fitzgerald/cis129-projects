@@ -1,0 +1,38 @@
+# Lab 5 The Bottle Return Program
+# Author: Rachel Fitzgerald 
+# Date: 2025-03-03
+# This program tracks the total number of bottles collected over 7 days, 
+# calculates the total payout based on a per-bottle rate, 
+# and allows the user to repeat the process for multiple weeks of data.
+
+# Step 1: Declare variables below
+total_bottles = 0  # Accumulator for the total number of bottles collected
+today_bottles = 0  # Variable to store the number of bottles returned for a given day
+counter = 1  # Counter for the days, starts at 1
+total_payout = 0  # Variable to store the calculated total payout
+keep_going = 'y'  # Loop control variable, starts with 'y' to run the program initially
+
+# Step 2: Loop to run program again
+while keep_going.lower() == 'y':  # Loop will continue if user enters 'y'
+    total_bottles = 0  # Reset total_bottles at the start of each week
+    counter = 1  # Reset counter to 1 for each week
+
+    # Get bottles collected for each day of the week (7 days)
+    while counter <= 7:  # Loop runs for 7 days
+        # Step 3: Get number of bottles returned for a specific day
+        today_bottles = int(input(f"Enter number of bottles for day #{counter}: "))
+        total_bottles += today_bottles  # Add today's bottles to total_bottles
+        counter += 1  # Increment the counter for the next day
+
+    # Step 4: Calculate total payout based on total_bottles collected
+    payout_per_bottle = 0.10  # The payout rate per bottle returned
+    total_payout = total_bottles * payout_per_bottle  # Calculate total payout
+
+    # Step 5: Display the results
+    print(f"The total number of bottles collected is {total_bottles}")
+    print(f"The total paid out is ${total_payout:.2f}")  # Format payout to 2 decimal places
+
+    # Step 6: Ask if the user wants to enter another week's worth of data
+    keep_going = input("Do you want to enter another week’s worth of data? (Enter y or n): ")
+
+# End of program
