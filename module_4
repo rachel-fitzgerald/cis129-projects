@@ -1,0 +1,68 @@
+```python
+# There is nothing wrong with this code. It should display both a and b as the number 7
+a = b = 7
+print('a =', a, '\nb =', b)
+```
+
+    a = 7 
+    b = 7
+    
+
+
+```python
+# Read two integers
+x = int(input("Enter first integer: "))
+y = int(input("Enter second integer: "))
+
+# Using three if-else statements
+if x == y:
+    print("x and y are equal")
+elif x < y:
+    print("x is less than y")
+else:
+    print("x is greater than y")
+```
+
+    Enter first integer:  4
+    Enter second integer:  6
+    
+
+    x is less than y
+    
+
+
+```python
+# Simple medical diagnosis script
+
+# Prompt the user for their problem
+input("What is your problem? ")
+
+# Prompt the user if they’ve had this problem before
+response = input("Have you had this problem before (yes or no)? ").strip().lower()
+
+# Based on their response, give a diagnosis
+if response == 'yes':
+    print("Well, you have it again.")
+elif response == 'no':
+    print("Well, you have it now.")
+else:
+    print("Sorry, I didn't understand your response.")
+```
+
+    What is your problem?  I have a fever
+    Have you had this problem before (yes or no)?  yes
+    
+
+    Well, you have it again.
+    
+
+
+```python
+# No, this does not show the user that the entity exhibits intelligent behavior. It has a lack of conversation to understand all of the symptoms and has a generic response. 
+
+```
+
+
+```python
+
+```
