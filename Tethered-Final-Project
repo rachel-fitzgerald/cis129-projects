@@ -1,1 +1,37 @@
+# Tethered – Final Project
+
+**Tethered** is a conceptual mobile app designed to help couples strengthen their relationships through daily check-ins, shared reflections, and intentional connection. This project was created as a final for a programming fundamentals course, focusing on applying programming concepts to real-world problem solving.
+
+## 🧠 Problem Statement
+Many couples struggle with maintaining consistent communication, especially when life gets busy. While there are apps for relationship advice and scheduling, few offer a structured, mutual way for partners to emotionally check in with one another each day.
+
+## 💡 Proposed Solution
+Tethered addresses this need by offering a lightweight, user-friendly app that prompts both partners to complete a brief daily check-in. The app focuses on emotional awareness, mutual understanding, and building habits of intentional conversation.
+
+## 📌 Project Contents
+This repository includes:
+- `presentation-slides/`: Final presentation slides in PDF format
+- `pseudocode/`: A Python-like draft of the check-in logic
+- `user-journey/`: A visual representation of the user flow
+- `research-notes/`: Notes on existing solutions and design inspiration
+
+## 📋 Features of Tethered
+- Daily emotional check-ins for both partners
+- End-of-day summaries showing shared reflections
+- Gentle nudges to promote healthy communication habits
+- Clean, minimal design tailored to ease of use
+
+## 🎯 Course Requirements Covered
+- ✅ Research & problem identification  
+- ✅ Existing solution exploration  
+- ✅ Pseudocode for core functionality  
+- ✅ User interface and flow mockups  
+- ✅ Real-world application discussion  
+- ✅ GitHub submission with structured files
+
+## 🔗 Final Presentation
+You can view the final slide presentation [here](./presentation-slides/Tethered_Final_Slides.pdf).
+
+---
+
 
