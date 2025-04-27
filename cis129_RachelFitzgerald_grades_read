@@ -1,0 +1,30 @@
+with open("grades.txt", "r") as file:
+    grades = []
+    
+    # Read each line from the file
+    for line in file:
+        # Strip whitespace and convert to float
+        try:
+            grade = float(line.strip())
+            grades.append(grade)
+        except ValueError:
+            # Handle any non-numeric values in the file
+            print(f"Invalid grade value found: {line.strip()}")
+    
+    # Calculate total, count, and average
+    total = sum(grades)
+    count = len(grades)
+    
+    if count > 0:
+        average = total / count
+    else:
+        average = 0
+    
+    # Display the results
+    print("Grades from the file:")
+    for grade in grades:
+        print(grade)
+    
+    print(f"\nTotal: {total}")
+    print(f"Count: {count}")
+    print(f"Average: {average:.2f}")
