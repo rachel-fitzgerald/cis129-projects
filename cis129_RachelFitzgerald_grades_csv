@@ -1,0 +1,32 @@
+import csv
+
+# Open the grades.csv file in write mode (will create the file if it doesn't exist)
+with open("grades.csv", mode="w", newline="") as file:
+    writer = csv.writer(file)
+    
+    # Write the header row
+    writer.writerow(["firstname", "lastname", "exam1grade", "exam2grade", "exam3grade"])
+    
+    print("Enter student information. Type 'done' when finished.")
+    
+    while True:
+        # Get student information from the instructor
+        first_name = input("Enter student's first name (or 'done' to finish): ")
+        
+        if first_name.lower() == 'done':
+            break
+        
+        last_name = input("Enter student's last name: ")
+        
+        # Get the grades for the three exams
+        try:
+            exam1_grade = int(input("Enter grade for exam 1: "))
+            exam2_grade = int(input("Enter grade for exam 2: "))
+            exam3_grade = int(input("Enter grade for exam 3: "))
+            
+            # Write the student's record to the CSV file
+            writer.writerow([first_name, last_name, exam1_grade, exam2_grade, exam3_grade])
+        except ValueError:
+            print("Please enter valid integer grades for the exams.")
+    
+    print("Student records have been saved to grades.csv.")
