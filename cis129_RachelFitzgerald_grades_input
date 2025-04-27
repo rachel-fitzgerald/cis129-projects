@@ -1,0 +1,19 @@
+# Open the file in write mode
+with open("grades.txt", "w") as file:
+    print("Enter grades. Type 'done' when finished.")
+    
+    while True:
+        grade_input = input("Enter grade (or 'done' to finish): ")
+        
+        # Check if the sentinel value 'done' is entered
+        if grade_input.lower() == 'done':
+            break
+        
+        # Validate the input to make sure it's a number (grade)
+        try:
+            grade = float(grade_input)
+            file.write(f"{grade}\n")  # Write the grade to the file followed by a newline
+        except ValueError:
+            print("Invalid input. Please enter a valid number or 'done' to finish.")
+    
+print("Grades have been saved to grades.txt.")
